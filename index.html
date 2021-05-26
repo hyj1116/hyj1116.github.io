@@ -29,6 +29,18 @@
                 <li>sudo systemd-tty-ask-password-agent</li>
                 <li>sudo service openvpn start</li>
             </td>
+        <tr>
+            <td><a href="https://askubuntu.com/questions/1157417/install-adoptopenjdk-onto-ubuntu-18-04-lts">Install
+                    AdoptOpenJDK onto Ubuntu 18.04 LTS</a> </td>
+            <td>
+                <li>wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
+                <li> sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/</li>
+                <li> sudo apt update</li>
+                <li> sudo apt install adoptopenjdk-11-hotspot # Java 11 / HotSpot VM</li>
+                <li> sudo apt install adoptopenjdk-11-openj9 # Java 11 / OpenJ9 VM</li>
+                <li>sudo update-alternatives --config java</li>
+            </td>
+        </tr>
         </tr>
     </table>
 </body>
